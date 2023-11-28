@@ -1,6 +1,7 @@
 import { Box, Flex, Img, Text } from "@chakra-ui/react";
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { TbUserFilled } from "react-icons/tb";
 
 export const Nav = () => {
   return (
@@ -35,7 +36,7 @@ export const Nav = () => {
           <p>Contact Us</p>
         </AnchorLink>
       </Flex>
-      <Text>Login</Text>
+      <TbUserFilled fontSize={30}/>
     </Flex>
   );
 };

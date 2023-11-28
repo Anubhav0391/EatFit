@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, Img, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, Heading, Img, Text } from "@chakra-ui/react";
 import React from "react";
 
 export const Menu = () => {
@@ -92,7 +92,12 @@ export const Menu = () => {
       price: 175,
     }
   ];
-  return <Grid templateColumns={'repeat(4,1fr)'} id="menu" gap={5}>
+  return (
+    <Box id="menu" p={'35px'} mb={20}>
+    <Heading fontSize={70} my={10}>
+      Eat <span style={{ color: "#FC2E71" }}>Now</span>
+    </Heading>
+      <Grid templateColumns={'repeat(4,1fr)'} gap={5}>
     {data?.map(el=><Box w={'fit-content'}>
       <Img src={el.img} borderRadius={5}/>
       <Text fontWeight={450}>{el.title}</Text>
@@ -101,5 +106,7 @@ export const Menu = () => {
         <Button color={"white"} bg={"#FC2E71"}> ADD </Button>
       </Flex>
     </Box>)}
-  </Grid>;
+  </Grid>
+    </Box>
+  );
 };
