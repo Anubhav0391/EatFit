@@ -4,15 +4,15 @@
 ## Deployed URL
 https://eatfit-anubhav0391.vercel.app/
 
-## Run At Localhost
+## Run Locally
 npm start
 
 ## Dependencies
-ChakraUI
+• ChakraUI
 <br/>
-React Slick
+• React Slick
 <br/>
-React Icons
+• React Icons
 <br/>
-Anchorlink Smooth Scroll
+• Anchorlink Smooth Scroll
 <br/>
